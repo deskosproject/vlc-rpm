@@ -1,7 +1,7 @@
 Summary:    The cross-platform open-source multimedia framework, player and server
 Name:       vlc
 Version:    2.2.2
-Release:    5%{?dist}
+Release:    6%{?dist}
 Epoch:      1
 License:    GPLv2+
 URL:        http://www.videolan.org
@@ -106,7 +106,6 @@ BuildRequires:  pkgconfig(SDL_image) >= 1.2.10
 #BuildRequires:  pkgconfig(shine) >= 3.0.0
 BuildRequires:  pkgconfig(shout) >= 2.1
 BuildRequires:  pkgconfig(speex) >= 1.0.5
-BuildRequires:  pkgconfig(speexdsp)
 BuildRequires:  pkgconfig(taglib)
 BuildRequires:  pkgconfig(theoradec) >= 1.0
 BuildRequires:  pkgconfig(theoraenc)
@@ -695,8 +694,11 @@ fi
 %{_libdir}/pkgconfig/libvlc.pc
 
 %changelog
-* Mon May 16 2016 Ricardo Arguello <rarguello@deskosproject.org> 2.2.2-5
+* Tue Nov 15 2016 Ricardo Arguello <rarguello@deskosproject.org> - 1:2.2.2-6
 - Rebuilt for DeskOS
+
+* Tue Oct 04 2016 Nux <rpm@li.nux.ro> - 1:2.2.2-5
+- rebuild against newer libdvbpsi
 
 * Tue Apr 19 2016 Nux <rpm@li.nux.ro> - 1:2.2.2-4
 - rebuild against newer libprojectM from epel
